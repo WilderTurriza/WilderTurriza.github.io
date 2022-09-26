@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang='es'>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width-device-width, initial-scale=1.0">
+		<title> Contacto </title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="(min-width:380px)">
+		<link rel="stylesheet" type="text/css" href="css/form.css" media="(min-width:380px)">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a href='Index.html'> Inicio </a>
+					</li>
+					<li>
+						<a href='Autobio.html'> Quien soy </a>
+					</li>
+					<li>
+						<a href='Galeria.html'> Galeria </a>
+					</li>
+					<li>
+						<a href='Contacto.html'> Contacto </a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+			<h1>Contacto</h1>
+			<form id="contacto" name="contacto" method="post" action="procesa.php" target="_blank">
+				
+				<fieldset>
+					<legend>Datos</legend>
+					<label for="nombre">Nombre</label>
+					<input id="nombre" name='nombre' type='text'>
+					
+					<label for="apellidos">Apellidos</label> 
+					<input id="apellidos" name='apellidos' type='text'>
+					
+					<label for="mail">Correo electr&oacute;nico</label>
+					<input type="email" id="mail" name="user_mail">
+					
+					<label for="msg">Mensaje</label>
+					<textarea id="msg" name="user_message">Escriba aquí  su mensaje.</textarea>
+				</fieldset>
+
+				<fieldset>
+					<legend>Género</legend> 
+					<input type="radio" name="radioF1" id="radioF"> Masculino
+					<input type="radio" name="radioM1" id="radioM"> Femenino 
+				</fieldset>
+				
+				<fieldset>
+							<legend>Intereses</legend>
+							<input type="checkbox" name="deporte" value="Deportes" > Hacer Deporte
+							<input type="checkbox" name="tv" value="Televisión" > Ver Televisión
+							<input type="checkbox" name="ejercicio" value="Ejercicio" > Hacer Ejercicio
+				</fieldset>	
+						
+				<fieldset>
+					<legend>Estudios Actuales</legend>
+					<select name="select">
+						<option value="value1">Secundaria</option> 
+						<option value="value2">Bachillerato</option>
+						<option value="value3">Licenciatura</option>
+					</select>
+				</fieldset>
+						
+					
+				<fieldset>
+					<legend>Navegador usado</legend>
+					<label>Selecciona el Buscador utilizado:
+					<input list="buscadores" name="MisBuscadores" /></label>
+					<datalist id="buscadores">
+						<option value="Chrome">
+						<option value="Firefox">
+						<option value="Internet Explorer">
+						<option value="Opera">
+						<option value="Safari">
+						<option value="Microsoft Edge">
+					</datalist>
+				</fieldset>
+
+				<input class="boton" type="submit" value="Enviar">
+			</form>
+		</section>
+		
+		
+		
+		<footer>
+		
+			<section class="redes">
+				<h3>Contactos:</h3>
+				<a href="https://www.linkedin.com/in/wilder-turriza/"> <img src="fotos/linkedin.png" title="LinkedIn">
+					&nbsp;</a>
+				<a href="https://www.facebook.com/wilderdemmanuel.turrizapoot"> <img src="fotos/Facebook.png" title="Facebook">
+					&nbsp;</a>
+				<a href="mailto:turriza.poot.wilder@gmail.com"> <img src="fotos/gmail.png" title="Gmail">&nbsp;</a>
+				<a href="https://github.com/WilderTurriza"> <img src="fotos/github.png" title="GitHub">&nbsp;</a>
+			</section>
+			<p>
+				Tizim&iacute;n, Yucat&aacute;n, Agosto, 2022
+			</p>
+		</footer>
+		
+	</body>
+</html>
