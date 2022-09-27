@@ -1,0 +1,58 @@
+.contenedor {
+    display: flex;
+    padding: 0%;
+}
+.contenedor section, footer{
+    padding: 1em;
+    text-align: center;
+}
+footer {
+    display: grid;
+    justify-content: center;
+}
+
+.bio img {
+    float: left;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "n1 n1 n2"
+    "n1 n1 n3"
+    "n4 n6 n5"
+    "n4 n7 n5";
+    gap: 1em;
+}
+.item {
+    text-align: center;
+}
+.bio{
+    grid-area: n1;
+}
+.infAcademica {
+    grid-area: n2;
+}
+.pasatiempo {
+    grid-area: n3;
+}
+.habilidadesTec{
+    grid-area: n4;
+}
+.habilidadesPersonales {
+    grid-area: n5;
+}
+.cita {
+    grid-area: n6;
+}
+.sitio {
+    grid-area: n7;
+}
+
+.galeria{
+    text-align: center;
+}
+table{
+    width: 100%;
+}
