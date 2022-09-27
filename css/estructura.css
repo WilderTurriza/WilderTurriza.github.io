@@ -1,3 +1,33 @@
+header {
+    display: flex;
+    justify-content: center;
+
+}
+nav li {
+    display: flex;
+    margin: 0 4px 0 4px;
+    padding: 0.5em;
+}
+.menu {
+    padding: 0;
+    width: 100%;
+    max-width: 1000px;
+    margin:auto;
+    justify-content: center;
+}
+.menu li a{
+    padding: 20px;
+    display: block;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
 .contenedor {
     display: flex;
     padding: 0%;
@@ -10,14 +40,47 @@ footer {
     display: grid;
     justify-content: center;
 }
+.redes {
+    margin-top: 20px;
+    border: 0px;
+}
+.contacto {
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    
+}
+.contacto h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.control, #msg{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 16px;
+}
+.boton{
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+}
+fieldset {
+    padding-right: 33px;
+    margin-top: 10px;
+}
 
 .bio img {
     float: left;
 }
 .grid {
+    padding-top: 1em;
+    padding-bottom: 0;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);
     grid-template-areas: 
     "n1 n1 n2"
     "n1 n1 n3"
@@ -49,6 +112,7 @@ footer {
 .sitio {
     grid-area: n7;
 }
+
 
 .galeria{
     text-align: center;
