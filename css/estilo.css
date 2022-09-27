@@ -1,39 +1,13 @@
-header {
-    display: flex;
-    justify-content: center;
-
-}
-
-
-nav li {
-    display: flex;
-    margin: 0 4px 0 4px;
-    padding: 0.5em;
-    
-}
-
 .menu {
     list-style-type: none;
-    padding: 0;
     background-color: black;
-    width: 100%;
-    max-width: 1000px;
-    margin:auto;
     border-radius: 1rem;
-    justify-content: center;
 }
 
 .menu li a{
     text-decoration: none;
     color:white;
-    padding: 20px;
-    display: block;
     border-radius: 1rem;
-}
-
-.menu li{
-    display: inline-block;
-    text-align: center;
 }
 
 .menu li a:hover{
@@ -41,12 +15,9 @@ nav li {
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
     border-top: 5px solid #974500;
     border-bottom: 5px solid #974500;
     border-radius: 1rem;
-    margin-top: 20px;
     background-color: #C35D09;
     color: #FFFFFF;
 }
@@ -56,37 +27,23 @@ footer a {
 }
 
 .redes {
-    margin-top: 20px;
     background-color: #C35D09;
-    border: 0px;
 }
 
 .contacto {
-    width: 400px;
-    padding: 30px;
     background-color: #24303c;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
     border-radius: 1rem;
     color: #FFFFFF;
-    justify-content: center;
     
 }
 
 .contacto h1{
     font-size: 2em;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 .control, #msg{
-    width: 100%;
     color: #7f8892;
-    padding: 10px;
     border-radius: 0.5rem;
-    margin-top: 5px;
-    margin-bottom: 16px;
     border: 1px solid #1f53c5;
     background-color: #24303c;
     font-size: 18px;
@@ -95,18 +52,13 @@ footer a {
 
 
 .boton{
-    width: 100%;
     background-color: #1f53c5;
-    margin-top: 10px;
     border: none;
-    padding: 12px;
     color: #FFFFFF;
     font-size: 16px;
 }
 
 fieldset {
-    padding-right: 33px;
     border: 1px solid #1f53c5;
     border-radius: 0.5rem;
-    margin-top: 10px;
 }

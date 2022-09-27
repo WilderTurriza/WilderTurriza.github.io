@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang='es'>
+<html lang="es">
 
 <head>
-	<meta charset='utf-8'>
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width-device-width, initial-scale=1.0">
 	<title> Contacto </title>
-	<link rel="stylesheet" type="text/css" href="css/estilo.css" media="(min-width:380px)">
-	<!-- <link rel="stylesheet" type="text/css" href="css/form.css" media="(min-width:380px)"> -->
+	<link rel="stylesheet" type="text/css" href="/css/estilo.css" media="(min-width:380px)">
+	<link rel="stylesheet" type="text/css" href="/css/estructura.css" media="(min-width:380px)">
 </head>
 
 <body>
@@ -15,16 +15,16 @@
 		<nav>
 			<ul class="menu">
 				<li>
-					<a href='index.html'> Inicio </a>
+					<a href="index.html"> Inicio </a>
 				</li>
 				<li>
-					<a href='autobio.html'> Quien soy </a>
+					<a href="autobio.html"> Quien soy </a>
 				</li>
 				<li>
-					<a href='galeria.html'> Galeria </a>
+					<a href="galeria.html"> Galeria </a>
 				</li>
 				<li>
-					<a href='contacto.html'> Contacto </a>
+					<a href="contacto.html"> Contacto </a>
 				</li>
 			</ul>
 		</nav>
@@ -37,10 +37,10 @@
 			<fieldset>
 				<legend>Datos</legend>
 				<label for="nombre">Nombre</label>
-				<input class="control" id="nombre" name='nombre' type='text'>
+				<input class="control" id="nombre" name="nombre" type="text">
 
 				<label for="apellidos">Apellidos</label>
-				<input class="control" id="apellidos" name='apellidos' type='text'>
+				<input class="control" id="apellidos" name="apellidos" type="text">
 
 				<label for="mail">Correo electr&oacute;nico</label>
 				<input class="control" type="email" id="mail" name="user_mail">
@@ -51,8 +51,8 @@
 
 			<fieldset>
 				<legend>Género</legend>
-				<input type="radio" name="radio" id="radio"> Masculino
-				<input type="radio" name="radio" id="radio"> Femenino
+				<input type="radio" name="radio" id="radioM"> Masculino
+				<input type="radio" name="radio" id="radioF"> Femenino
 			</fieldset>
 
 			<fieldset>
@@ -77,21 +77,19 @@
 				<label>Selecciona el Buscador utilizado:
 					<input list="buscadores" name="MisBuscadores" /></label>
 				<datalist id="buscadores">
-					<option value="Chrome">
-					<option value="Firefox">
-					<option value="Internet Explorer">
-					<option value="Opera">
-					<option value="Safari">
-					<option value="Microsoft Edge">
+					<option value="Chrome"></option>
+					<option value="Firefox"></option>
+					<option value="Internet Explorer"></option>
+					<option value="Opera"></option>
+					<option value="Safari"></option>
+					<option value="Microsoft Edge"></option>
 				</datalist>
 			</fieldset>
 
 			<input class="boton" type="submit" value="Enviar">
 		</form>
 	</section>
-
-
-
+	
 	<footer>
 
 		<section class="redes">
