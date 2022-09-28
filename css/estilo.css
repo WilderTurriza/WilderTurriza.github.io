@@ -1,24 +1,37 @@
+header{
+    background-color: #24303c;
+    border-bottom: 5px solid #1f53c5;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .menu {
     list-style-type: none;
-    background-color: black;
+    background-color: #353b41;
     border-radius: 1rem;
+    
 }
 
 .menu li a{
     text-decoration: none;
     color:white;
     border-radius: 1rem;
+    /* border-style: dashed;
+    border-color: #24303c; */
 }
 
 .menu li a:hover{
-    background-color: chocolate;
+    background-color: #1f53c5;
+    /* border-style:dashed;
+    border-color: #24303c; */
 }
 
 footer {
-    border-top: 5px solid #974500;
-    border-bottom: 5px solid #974500;
+    border-top: 5px solid #1f53c5;
+    border-bottom: 5px solid #1f53c5;
     border-radius: 1rem;
-    background-color: #C35D09;
+    background-color: #24303c;
     color: #FFFFFF;
 }
 
@@ -27,7 +40,7 @@ footer a {
 }
 
 .redes {
-    background-color: #C35D09;
+    background-color: #24303c;
 }
 
 .contacto {
@@ -41,15 +54,13 @@ footer a {
     font-size: 2em;
 }
 
-.control, #msg{
+.escritura, #msg{
     color: #7f8892;
     border-radius: 0.5rem;
     border: 1px solid #1f53c5;
     background-color: #24303c;
     font-size: 18px;
 }
-
-
 
 .boton{
     background-color: #1f53c5;
@@ -61,4 +72,51 @@ footer a {
 fieldset {
     border: 1px solid #1f53c5;
     border-radius: 0.5rem;
+}
+
+.titulo{
+    font-size: 1.5em;
+    color: #353b41;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.galeria h1{
+    color:#24303c;
+    font-size:xx-large;
+}
+
+table{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hombres {
+    background-color: #24303c;
+    color: #a4acb6;
+    font-size: large;
+}
+
+.mujeres {
+    background-color: #7f8892;
+    color: #24303c;
+    font-size: large;
+}
+
+.boy {
+    color: #24303c;
+    background-color: #7f8892;
+}
+
+.girl {
+    color: #a4acb6;
+    background-color: #24303c;
+}
+
+table a:hover .girl {
+    color: #24303c;
+    background-color: #7f8892;
+}
+
+table a:hover .boy {
+    color: #a4acb6;
+    background-color: #24303c;
 }

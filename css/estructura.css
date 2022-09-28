@@ -1,7 +1,9 @@
+
 header {
     display: flex;
     justify-content: center;
-
+    border-radius: 1rem;
+    padding: 10px;
 }
 nav li {
     display: flex;
@@ -57,7 +59,7 @@ footer {
     text-align: center;
     margin-bottom: 20px;
 }
-.control, #msg{
+.escritura, #msg{
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -113,10 +115,58 @@ fieldset {
     grid-area: n7;
 }
 
+.item li {
+    list-style:circle;
+    text-align: left;
+    margin: 0;
 
+}
 .galeria{
     text-align: center;
 }
+
+.autobio{
+    text-align: justify;
+}
+
 table{
-    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+table a{
+    text-decoration: none;
+    justify-content: center;
+}
+
+table div{
+    display: inline-block;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 2px;
+}
+
+td{
+    padding: 10px;
+}
+
+.titulo {
+    text-decoration: overline;
+    text-align: center;
+    padding-bottom: 0.7em;
+}
+
+.galeria h1 {
+    margin-bottom: 0.5px;
+}
+
+.hombres {
+    padding: 1em;
+    border-radius: 0.5rem;
+}
+
+.mujeres {
+    padding: 1em;
+    border-radius: 0.5rem;
 }
