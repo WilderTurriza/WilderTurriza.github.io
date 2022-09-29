@@ -23,6 +23,7 @@ body {
 
 .menu li a:hover{
     background-color: #1f53c5;
+    box-shadow: inset 5px 5px 20px 5px #1642a1;
     /* border-style:dashed;
     border-color: #24303c; */
 }
@@ -114,9 +115,11 @@ table{
 table a:hover .girl {
     color: #24303c;
     background-color: #7f8892;
+    box-shadow: inset 5px 5px 20px 5px #54606b;
 }
 
 table a:hover .boy {
     color: #a4acb6;
     background-color: #24303c;
+    box-shadow: inset 5px 5px 20px 5px #394653;
 }
