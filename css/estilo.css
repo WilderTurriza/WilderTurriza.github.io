@@ -3,7 +3,7 @@ header{
     border-bottom: 5px solid #1f53c5;
 }
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans';
 }
 
 .menu {
@@ -68,6 +68,7 @@ footer a {
     border: none;
     color: #FFFFFF;
     font-size: 16px;
+    box-shadow: inset 5px 5px 20px 5px #1642a1;
 }
 
 fieldset {
@@ -78,10 +79,10 @@ fieldset {
 .titulo{
     font-size: 1.5em;
     color: #353b41;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans';
 }
 
-.galeria h1{
+.contenido h1{
     color:#24303c;
     font-size:xx-large;
 }
@@ -122,4 +123,8 @@ table a:hover .boy {
     color: #a4acb6;
     background-color: #24303c;
     box-shadow: inset 5px 5px 20px 5px #394653;
+}
+
+h1, h2{
+    text-align: center;
 }

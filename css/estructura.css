@@ -1,51 +1,61 @@
-
 header {
     display: flex;
     justify-content: center;
     border-radius: 1rem;
     padding: 10px;
 }
+
 nav li {
     display: flex;
     margin: 0 4px 0 4px;
     padding: 0.5em;
 }
+
 .menu {
     padding: 0;
     width: 100%;
     max-width: 1000px;
-    margin:auto;
+    margin: auto;
     justify-content: center;
 }
-.menu li a{
+
+.menu li a {
     padding: 20px;
     display: block;
 }
-.menu li{
+
+.menu li {
     display: inline-block;
     text-align: center;
 }
+
 footer {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
 }
+
 .contenedor {
     display: flex;
     padding: 0%;
 }
-.contenedor section, footer{
+
+.contenedor section,
+footer {
     padding: 1em;
     text-align: center;
 }
+
 footer {
     display: grid;
     justify-content: center;
 }
+
 .redes {
     margin-top: 20px;
     border: 0px;
 }
+
 .contacto {
     width: 400px;
     padding: 30px;
@@ -53,23 +63,34 @@ footer {
     margin-top: 50px;
     margin-bottom: 50px;
     justify-content: center;
-    
+
 }
-.contacto h1{
+
+.contacto h1 {
     text-align: center;
     margin-bottom: 20px;
 }
-.escritura, #msg{
+
+.escritura,
+#msg {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 16px;
 }
-.boton{
+
+.boton {
     width: 100%;
     margin-top: 10px;
     padding: 12px;
+    border-radius: 0.5rem;
+    
 }
+
+.boton:hover{
+    transform: scale(1.04);
+}
+
 fieldset {
     padding-right: 33px;
     margin-top: 10px;
@@ -78,68 +99,80 @@ fieldset {
 .bio img {
     float: left;
 }
+
 .grid {
     padding-top: 1em;
     padding-bottom: 0;
+    padding-left: 1em;
+    padding-right: 1em;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-areas: 
-    "n1 n1 n2"
-    "n1 n1 n3"
-    "n4 n6 n5"
-    "n4 n7 n5";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "n1 n1 n2"
+        "n1 n1 n3"
+        "n4 n6 n5"
+        "n4 n7 n5";
     gap: 1em;
 }
+
 .item {
     text-align: center;
 }
-.bio{
+
+.bio {
     grid-area: n1;
 }
+
 .infAcademica {
     grid-area: n2;
 }
+
 .pasatiempo {
     grid-area: n3;
 }
-.habilidadesTec{
+
+.habilidadesTec {
     grid-area: n4;
 }
+
 .habilidadesPersonales {
     grid-area: n5;
 }
+
 .cita {
     grid-area: n6;
 }
+
 .sitio {
     grid-area: n7;
 }
 
 .item li {
-    list-style:circle;
+    list-style: circle;
     text-align: left;
     margin: 0;
 
 }
-.galeria{
+
+.contenido {
     text-align: center;
 }
 
-.autobio{
+.autobio {
     text-align: justify;
 }
 
-table{
+table {
     display: flex;
     justify-content: center;
 }
 
-table a{
+table a {
     text-decoration: none;
     justify-content: center;
 }
 
-table div{
+table div {
     display: inline-block;
     justify-content: center;
     border-radius: 1rem;
@@ -147,7 +180,7 @@ table div{
     margin: 2px;
 }
 
-td{
+td {
     padding: 10px;
 }
 
@@ -157,7 +190,7 @@ td{
     padding-bottom: 0.7em;
 }
 
-.galeria h1 {
+.contenido h1 {
     margin-bottom: 0.5px;
 }
 
@@ -169,4 +202,37 @@ td{
 .mujeres {
     padding: 1em;
     border-radius: 0.5rem;
+}
+
+.grid-item2 {
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #24303c;
+    color: white;
+    border-radius: 0.5em;
+    transition: transform 0.3s ease-in-out;
+
+    border: solid 1px rgb(255, 255, 255);
+    border-bottom: 5px solid #1f53c5;
+}
+
+.grid-item2:hover {
+    transform: scale(1.04);
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* auto-fill = calcula el ancho del grid automaticamente, y se crean las columnas segun sea necesario. Este es un ancho estatico*/
+    grid-auto-rows: minmax(200px, auto);
+}
+
+#cuest{
+    display: inline-block;
+    margin: 1em;
+    justify-content: center;
 }

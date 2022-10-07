@@ -8,11 +8,20 @@
 	<title> Contacto </title>
 	<link rel="stylesheet" type="text/css" href="/css/estilo.css" media="(min-width:380px)">
 	<link rel="stylesheet" type="text/css" href="/css/estructura.css" media="(min-width:380px)">
+	<script type="text/javascript">
+		function mostrar_fecha() {
+			const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+			const dias_semana = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+			const fecha = new Date();
+			var hora = fecha.getHours() + ':' + fecha.getMinutes() + ':' + fecha.getSeconds();
+			var fechaCompleta = dias_semana[fecha.getDay()] + " " + fecha.getDate() + ' de ' + meses[fecha.getMonth()] + ' de ' + fecha.getUTCFullYear();
+			document.write(fechaCompleta + ", " + hora);
+		}
+	</script>
 </head>
 
 <body>
 	<header>
-		<div class="cabeza"></div>
 		<nav>
 			<ul class="menu">
 				<li>
@@ -26,6 +35,9 @@
 				</li>
 				<li>
 					<a href="contacto.html"> Contacto </a>
+				</li>
+				<li>
+					<a href="Cuestionario.html"> Cuestionario </a>
 				</li>
 			</ul>
 		</nav>
@@ -92,7 +104,7 @@
 			<input class="boton" type="submit" value="Enviar">
 		</form>
 	</section>
-	
+
 	<footer>
 
 		<section class="redes">
@@ -106,7 +118,10 @@
 			<a href="https://github.com/WilderTurriza"> <img src="fotos/github.png" title="GitHub">&nbsp;</a>
 		</section>
 		<p>
-			Tizim&iacute;n, Yucat&aacute;n, Agosto, 2022
+			Tizim&iacute;n, Yucat&aacute;n,
+			<script type="text/javascript">
+				mostrar_fecha();
+			</script>
 		</p>
 	</footer>
 

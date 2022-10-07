@@ -1,87 +1,128 @@
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width-device-width, initial-scale=1.0">
-		<title> Galeria </title>
-		<link rel="stylesheet" type="text/css" href="/css/estructura.css" media="(min-width:380px)">
-		<link rel="stylesheet" type="text/css" href="/css/estilo.css" media="(min-width:380px)">
-	</head>
-	<body>
-		<header>
-			<nav>
-				<ul class="menu">
-					<li>
-						<a href="index.html"> Inicio </a>
-					</li>
-					<li>
-						<a href="autobio.html"> Sobre mi </a>
-					</li>
-					<li>
-						<a href="galeria.html"> Galería </a>
-					</li>
-					<li>
-						<a href="contacto.html"> Contacto </a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<section class="galeria">
-			<h1>Amigos</h1>
-			<table>
-				<tr>
-					<td colspan="3" class="titulo">Redes sociales de mis amigos</td>
-				</tr>
-				<tr>
-					<td rowspan="2" class="hombres">Hombres</td>
-					<td>
-						<a href="https://www.facebook.com/WillyJKL"> <img src="fotos/Willy.jpg" alt="Wilberth Kantun" ><br><div class="boy">Wilberth Kantun</div></a>
-					</td>
-					<td>
-						<a href="https://www.facebook.com/dznleandro"> <img src="fotos/Leandro.jpg" alt="Leandro Dzib" ><br><div class="boy">Leandro Dzib</div> </a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://www.facebook.com/profile.php?id=100077091062119"> <img src="fotos/Ibis.jpg" alt="Ibis Carrillo"><br><div class="boy">Ibis Carrillo</div></a>
-					</td>
-					<td>
-						<a href="https://www.facebook.com/domingo.ciau"> <img src="fotos/Domingo.jpg" alt="Domingo Ciau" ><br><div class="boy">Domingo Ciau</div></a>
-					</td>
-				</tr>
-				<tr>
-					<td rowspan="2" class="mujeres">Mujeres</td>
-					<td>
-						<a href="https://www.facebook.com/profile.php?id=100011351424142"><img src="fotos/Gaby.jpg" alt="Gabriela Batún" ><br><div class="girl">Gabriela Batún</div></a>
-					</td>
-					<td>
-						<a href="https://www.facebook.com/profile.php?id=100011005962623"><img src="fotos/Belen.jpg" alt="Belen Couoh"><br><div class="girl">Belen Couoh</div></a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://www.facebook.com/c.mora.h07"><img src="fotos/Cielo.jpg" alt="Cielo Mora" ><br><div class="girl">Cielo Mora</div></a>
-					</td>
-					<td>
-						<a href="https://www.facebook.com/NatalietaTorres"><img src="fotos/Natalie.jpg" alt="Natalie Torres"><br><div class="girl">Natalie Torres</div></a>
-					</td>
-				</tr>
-			</table>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<title> Galería </title>
+	<link rel="stylesheet" type="text/css" href="/css/estructura.css" media="(min-width:380px)">
+	<link rel="stylesheet" type="text/css" href="/css/estilo.css" media="(min-width:380px)">
+	<script type="text/javascript">
+		function mostrar_fecha() {
+			const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+			const dias_semana = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+			const fecha = new Date();
+			var hora = fecha.getHours() + ':' + fecha.getMinutes() + ':' + fecha.getSeconds();
+			var fechaCompleta = dias_semana[fecha.getDay()] + " " + fecha.getDate() + ' de ' + meses[fecha.getMonth()] + ' de ' + fecha.getUTCFullYear();
+			document.write(fechaCompleta + ", " + hora);
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul class="menu">
+				<li>
+					<a href="index.html"> Inicio </a>
+				</li>
+				<li>
+					<a href="autobio.html"> Sobre mi </a>
+				</li>
+				<li>
+					<a href="galeria.html"> Galería </a>
+				</li>
+				<li>
+					<a href="contacto.html"> Contacto </a>
+				</li>
+				<li>
+					<a href="cuestionario.html"> Cuestionario </a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section class="contenido">
+		<h1>Amigos</h1>
+		<table>
+			<tr>
+				<td colspan="3" class="titulo">Redes sociales de mis amigos</td>
+			</tr>
+			<tr>
+				<td rowspan="2" class="hombres">Hombres</td>
+				<td>
+					<a href="https://www.facebook.com/WillyJKL"> <img src="fotos/Willy.jpg" alt="Wilberth Kantun"><br>
+						<div class="boy">Wilberth Kantun</div>
+					</a>
+				</td>
+				<td>
+					<a href="https://www.facebook.com/dznleandro"> <img src="fotos/Leandro.jpg" alt="Leandro Dzib"><br>
+						<div class="boy">Leandro Dzib</div>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="https://www.facebook.com/profile.php?id=100077091062119"> <img src="fotos/Ibis.jpg"
+							alt="Ibis Carrillo"><br>
+						<div class="boy">Ibis Carrillo</div>
+					</a>
+				</td>
+				<td>
+					<a href="https://www.facebook.com/domingo.ciau"> <img src="fotos/Domingo.jpg"
+							alt="Domingo Ciau"><br>
+						<div class="boy">Domingo Ciau</div>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2" class="mujeres">Mujeres</td>
+				<td>
+					<a href="https://www.facebook.com/profile.php?id=100011351424142"><img src="fotos/Gaby.jpg"
+							alt="Gabriela Batún"><br>
+						<div class="girl">Gabriela Batún</div>
+					</a>
+				</td>
+				<td>
+					<a href="https://www.facebook.com/profile.php?id=100011005962623"><img src="fotos/Belen.jpg"
+							alt="Belen Couoh"><br>
+						<div class="girl">Belen Couoh</div>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="https://www.facebook.com/c.mora.h07"><img src="fotos/Cielo.jpg" alt="Cielo Mora"><br>
+						<div class="girl">Cielo Mora</div>
+					</a>
+				</td>
+				<td>
+					<a href="https://www.facebook.com/NatalietaTorres"><img src="fotos/Natalie.jpg"
+							alt="Natalie Torres"><br>
+						<div class="girl">Natalie Torres</div>
+					</a>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<footer>
+		<section class="redes">
+			<h3>Contactos:</h3>
+			<a href="https://www.linkedin.com/in/wilder-turriza/"> <img src="fotos/linkedin.png" title="LinkedIn">
+				&nbsp;</a>
+			<a href="https://www.facebook.com/wilderdemmanuel.turrizapoot"> <img src="fotos/Facebook.png"
+					title="Facebook">
+				&nbsp;</a>
+			<a href="mailto:turriza.poot.wilder@gmail.com"> <img src="fotos/gmail.png" title="Gmail">&nbsp;</a>
+			<a href="https://github.com/WilderTurriza"> <img src="fotos/github.png" title="GitHub">&nbsp;</a>
 		</section>
-		<footer>
-			<section class="redes">
-				<h3>Contactos:</h3>
-				<a href="https://www.linkedin.com/in/wilder-turriza/"> <img src="fotos/linkedin.png" title="LinkedIn">
-					&nbsp;</a>
-				<a href="https://www.facebook.com/wilderdemmanuel.turrizapoot"> <img src="fotos/Facebook.png" title="Facebook">
-					&nbsp;</a>
-				<a href="mailto:turriza.poot.wilder@gmail.com"> <img src="fotos/gmail.png" title="Gmail">&nbsp;</a>
-				<a href="https://github.com/WilderTurriza"> <img src="fotos/github.png" title="GitHub">&nbsp;</a>
-			</section>
-			<p>
-				Tizim&iacute;n, Yucat&aacute;n, Agosto, 2022
-			</p>
-		</footer>
-	</body>
+		<p>
+			Tizim&iacute;n, Yucat&aacute;n,
+			<script type="text/javascript">
+				mostrar_fecha();
+			</script>
+		</p>
+	</footer>
+</body>
+
 </html>
