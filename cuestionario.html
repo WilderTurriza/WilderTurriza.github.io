@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+    <link rel="stylesheet" type="text/css" href="/css/estructura.css" media="(min-width:380px)">
+    <link rel="stylesheet" type="text/css" href="/css/estilo.css" media="(min-width:380px)">
+    <script type="text/javascript">
+        function mostrar_fecha() {
+            const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+            const dias_semana = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+            const fecha = new Date();
+            var hora = fecha.getHours() + ':' + fecha.getMinutes() + ':' + fecha.getSeconds();
+            var fechaCompleta = dias_semana[fecha.getDay()] + " " + fecha.getDate() + ' de ' + meses[fecha.getMonth()] + ' de ' + fecha.getUTCFullYear();
+            document.write(fechaCompleta + ", " + hora);
+        }
+    </script>
+    <style>
+        div,
+        section,
+        p,
+        h3 {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        h3,
+        p,
+        input {
+            text-align: center;
+        }
+
+        body {
+            background-color: #ffffff;
+        }
+
+        .centrar {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html"> Inicio </a>
+                </li>
+                <li>
+                    <a href="autobio.html"> Sobre mi </a>
+                </li>
+                <li>
+                    <a href="galeria.html"> Galería </a>
+                </li>
+                <li>
+                    <a href="contacto.html"> Contacto </a>
+                </li>
+                <li>
+                    <a href="cuestionario.html"> Cuestionario </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contenido">
+        <h1>Cuestionario</h1>
+        <div class="titulo"> Instrucciones: Escribe todo en minúsculas </div>
+        <div class="grid2">
+            <div class="grid-item2" id="1">
+                <h3>Pregunta 1</h3>
+                <br>
+                <p>¿Cuál es la capital de Australia?</p>
+                <br>
+                <input type="text" class="respuesta" value="">
+                <p>
+                <div class="resultado"> </div>
+                </p>
+            </div>
+
+            <div class="grid-item2" id="2">
+                <h3>Pregunta 2</h3>
+                <br>
+                <p>¿Cuál es el metal cuyo símbolo químico es Au?</p>
+                <br>
+                <input type="text" class="respuesta" value="">
+                <p>
+                <div class="resultado"> </div>
+                </p>
+            </div>
+
+            <div class="grid-item2" id="3">
+                <h3>Pregunta 3</h3>
+                <br>
+                <p>¿Con qué países tiene frontera Ecuador?</p>
+                <br>
+                <select name="seleccion" id="seleccion1">
+                    <option value="1">Brasil y Colombia</option>
+                    <option value="2">Colombia y Venezuela</option>
+                    <option value="3">Colombia y Perú</option>
+                    <option value="4">Perú y Bolivia</option>
+                    <option value="5">Bolivia y Brasil</option>
+                </select>
+                <p>
+                <div class="resultado"> </div>
+                </p>
+            </div>
+
+            <div class="grid-item2" id="4">
+                <h3>Pregunta 4</h3>
+                <br>
+                <p>¿Cuál es el libro más vendido en el mundo después de la Biblia?</p>
+                <br>
+                <span>
+                    <input type="radio" name="respuesta4" value="1"> El Señor de los Anillos
+                    <br>
+                    <input type="radio" name="respuesta4" class="respuesta" value="2"> Don Quijote de la Mancha
+                    <br>
+                    <input type="radio" name="respuesta4" value="3"> El Principito
+                    <br>
+                    <input type="radio" name="respuesta4" value="4"> Cien años de Soledad
+                    <br>
+                    <input type="radio" name="respuesta4" value="5"> La Odisea
+                </span>
+                <p>
+                <div class="resultado"> </div>
+                </p>
+            </div>
+
+            <div class="grid-item2" id="5">
+                <h3>Pregunta 5</h3>
+                <br>
+                <p>¿Cuál es el país más grande y el más pequeño del mundo?</p>
+                <br>
+                <select name="seleccion" id="seleccion2">
+                    <option value="1">Rusia y Vaticano</option>
+                    <option value="2">China y Nauru</option>
+                    <option value="3">Canadá y Mónaco</option>
+                    <option value="4">Estados Unidos y Malta</option>
+                    <option value="5">India y San Marino</option>
+                </select>
+                <p>
+                <div class="resultado"> </div>
+                </p>
+            </div>
+        </div>
+        <section class="centrar">
+            <div id="cuest">
+                <input class="boton" type="button" value="Enviar"
+                    onclick="selec('seleccion1','2'); selec('seleccion2','4'); resp();">
+            </div>
+        </section>
+
+    </section>
+
+    <footer>
+        <section class="redes">
+            <h3>Contactos:</h3>
+            <a href="https://www.linkedin.com/in/wilder-turriza/"> <img src="fotos/linkedin.png" title="LinkedIn">
+                &nbsp;</a>
+            <a href="https://www.facebook.com/wilderdemmanuel.turrizapoot"> <img src="fotos/Facebook.png"
+                    title="Facebook">
+                &nbsp;</a>
+            <a href="mailto:turriza.poot.wilder@gmail.com"> <img src="fotos/gmail.png" title="Gmail">&nbsp;</a>
+            <a href="https://github.com/WilderTurriza"> <img src="fotos/github.png" title="GitHub">&nbsp;</a>
+        </section>
+        <p>
+            Tizim&iacute;n, Yucat&aacute;n,
+            <script type="text/javascript">
+                mostrar_fecha();
+            </script>
+        </p>
+    </footer>
+
+    <script>
+
+        var resultado = document.getElementsByClassName("resultado");
+
+        function verificar() {
+            if (respuesta[0].value == "" || respuesta[1].value == "" || document.querySelector('input[name="respuesta4"]:checked').value == 2) {
+
+            }
+        }
+
+        function resp() {
+            var respuesta = document.getElementsByClassName("respuesta");
+
+            if (respuesta[0].value == "canberra") {
+                resultado[0].innerHTML = "Correcto";
+                resultado[0].style.color = "green";
+            } else {
+                resultado[0].innerHTML = "Incorrecto";
+                resultado[0].style.color = "red";
+            } if (respuesta[1].value == "oro") {
+                resultado[1].innerHTML = "Correcto";
+                resultado[1].style.color = "green";
+            } else {
+                resultado[1].innerHTML = "Incorrecto";
+                resultado[1].style.color = "red";
+
+            } if (document.querySelector('input[name="respuesta4"]:checked') != null) {
+                if (document.querySelector('input[name="respuesta4"]:checked').value == 2) {
+                    resultado[3].innerHTML = "Correcto";
+                    resultado[3].style.color = "green";
+                } else {
+                    resultado[3].innerHTML = "Incorrecto";
+                    resultado[3].style.color = "red";
+                }
+            } else {
+                resultado[3].innerHTML = "Incorrecto";
+                resultado[3].style.color = "red";
+            }
+        }
+
+        function selec(id, num) {
+
+            var lista = document.getElementById(id);
+
+            var indiceSeleccionado = lista.selectedIndex;
+            var opcionSelec = lista.options[indiceSeleccionado];
+
+            if (opcionSelec.text == "Colombia y Perú") {
+                resultado[num].innerHTML = "Correcto";
+                resultado[num].style.color = "green";
+            } else if (opcionSelec.text == "Rusia y Vaticano") {
+                resultado[num].innerHTML = "Correcto";
+                resultado[num].style.color = "green";
+            } else {
+                resultado[num].innerHTML = "Incorrecto";
+                resultado[num].style.color = "red";
+            }
+
+
+        }
+
+    </script>
+</body>
+
+
+</html>

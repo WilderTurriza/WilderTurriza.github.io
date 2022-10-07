@@ -8,6 +8,16 @@
 	<title> informaci&oacute;n </title>
 	<link rel="stylesheet" type="text/css" href="/css/estructura.css" media="(min-width:380px)">
 	<link rel="stylesheet" type="text/css" href="/css/estilo.css" media="(min-width:380px)">
+	<script type="text/javascript">
+		function mostrar_fecha() {
+			const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+			const dias_semana = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+			const fecha = new Date();
+			var hora = fecha.getHours() + ':' + fecha.getMinutes() + ':' + fecha.getSeconds();
+			var fechaCompleta = dias_semana[fecha.getDay()] + " " + fecha.getDate() + ' de ' + meses[fecha.getMonth()] + ' de ' + fecha.getUTCFullYear();
+			document.write(fechaCompleta + ", " + hora);
+		}
+	</script>
 </head>
 
 <body>
@@ -26,8 +36,12 @@
 				<li>
 					<a href="contacto.html"> Contacto </a>
 				</li>
+				<li>
+					<a href="cuestionario.html"> Cuestionario </a>
+				</li>
 			</ul>
 		</nav>
+
 	</header>
 	<section class="contenedor">
 		<section>
@@ -35,6 +49,12 @@
 			<p>Bienvenidos a mi sitio web, en este sitio estar&eacute; mostrando informaci&oacute;n relacionada a mi, al
 				igual que todos mis contactos posibles.</p>
 			<strong>Que disfruten su estancia</strong>
+			<br>
+			<p>
+				<script type="text/javascript">
+					mostrar_fecha();
+				</script>
+			</p>
 		</section>
 		<section>
 			<h2>Ubicación</h2>
@@ -69,9 +89,13 @@
 			<a href="https://github.com/WilderTurriza"> <img src="fotos/github.png" title="GitHub">&nbsp;</a>
 		</section>
 		<p>
-			Tizim&iacute;n, Yucat&aacute;n, Agosto, 2022
+			Tizim&iacute;n, Yucat&aacute;n,
+			<script type="text/javascript">
+				mostrar_fecha();
+			</script>
 		</p>
 	</footer>
+
 </body>
 
 </html>
