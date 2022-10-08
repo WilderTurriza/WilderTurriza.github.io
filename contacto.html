@@ -17,6 +17,19 @@
 			var fechaCompleta = dias_semana[fecha.getDay()] + " " + fecha.getDate() + ' de ' + meses[fecha.getMonth()] + ' de ' + fecha.getUTCFullYear();
 			document.write(fechaCompleta + ", " + hora);
 		}
+
+		function click() {
+			var lista = document.getElementById("opciones");
+
+			var indiceSeleccion = lista.selectedIndex;
+			var opcionSeleccion = lista.options[indiceSeleccion];
+			var textoSeleccionado = opcionSeleccion.text;
+
+			if (textoSeleccionado == "nulo") {
+				alert("selecciones un grado de estudios")
+			}
+
+		}
 	</script>
 </head>
 
@@ -45,27 +58,27 @@
 
 	<section>
 
-		<form class="contacto" name="contacto" method="post" action="procesa.php" target="_blank">
+		<form class="contacto" name="contacto" method="post" action="procesa.php" target="_blank" id="formulario">
 			<h1>Contacto</h1>
 			<fieldset>
 				<legend>Datos</legend>
 				<label for="nombre">Nombre</label>
-				<input class="escritura" id="nombre" name="nombre" type="text">
+				<input class="escritura" id="nombre" name="nombre" type="text" required>
 
 				<label for="apellidos">Apellidos</label>
-				<input class="escritura" id="apellidos" name="apellidos" type="text">
+				<input class="escritura" id="apellidos" name="apellidos" type="text" required>
 
 				<label for="mail">Correo electr&oacute;nico</label>
-				<input class="escritura" type="email" id="mail" name="user_mail">
+				<input class="escritura" type="email" id="mail" name="user_mail" required>
 
 				<label for="msg">Mensaje</label>
-				<textarea id="msg" name="user_message" placeholder="Escriba aquí su mensaje."></textarea>
+				<textarea id="msg" name="user_message" placeholder="Escriba aquí su mensaje." required></textarea>
 			</fieldset>
 
 			<fieldset>
 				<legend>Género</legend>
-				<input type="radio" name="radio" id="radioM"> Masculino
-				<input type="radio" name="radio" id="radioF"> Femenino
+				<input type="radio" name="radio" id="radioM" required> Masculino
+				<input type="radio" name="radio" id="radioF" required> Femenino
 			</fieldset>
 
 			<fieldset>
@@ -79,18 +92,19 @@
 
 			<fieldset>
 				<legend>Estudios Actuales</legend>
-				<select name="select">
-					<option value="value1">Secundaria</option>
-					<option value="value2">Bachillerato</option>
-					<option value="value3">Licenciatura</option>
+				<select id="estudios" required>
+					<option value="nulo">Seleccionar...</option>
+					<option value="sin">Sin estudios</option>
+					<option value="Sec">Secundaria</option>
+					<option value="MedSup">Bachillerato</option>
+					<option value="Sup">Licenciatura</option>
 				</select>
 			</fieldset>
-
 
 			<fieldset>
 				<legend>Navegador usado</legend>
 				<label>Selecciona el Buscador utilizado:
-					<input list="buscadores" name="MisBuscadores" /></label>
+					<input list="buscadores" name="MisBuscadores" required /></label>
 				<datalist id="buscadores">
 					<option value="Chrome"></option>
 					<option value="Firefox"></option>
@@ -100,8 +114,7 @@
 					<option value="Microsoft Edge"></option>
 				</datalist>
 			</fieldset>
-
-			<input class="boton" type="submit" value="Enviar">
+			<input class="boton" type="submit" value="Enviar" onclick="return validar();">
 		</form>
 	</section>
 
@@ -124,6 +137,27 @@
 			</script>
 		</p>
 	</footer>
+
+	<script>
+		function validar() {
+			var valido = true;
+
+			var email = document.getElementById('mail');
+			var emailValido = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+			if (!emailValido.exec(email.value)) {
+				alert('La direccion de email es incorrecta')
+				valido = false;
+			}
+
+			var estudios = document.getElementById('estudios');
+			if (estudios.value == 'nulo') {
+				alert('Seleccionar un estudio');
+				valido = false;
+			}
+
+			return valido;
+		}
+	</script>
 
 </body>
 

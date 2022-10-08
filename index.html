@@ -10,10 +10,10 @@
 	<link rel="stylesheet" type="text/css" href="/css/estilo.css" media="(min-width:380px)">
 	<script type="text/javascript">
 		function mostrar_fecha() {
-			const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
-			const dias_semana = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+			const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+			const dias_semana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
 			const fecha = new Date();
-			var hora = fecha.getHours() + ':' + fecha.getMinutes() + ':' + fecha.getSeconds();
+			var hora = fecha.getHours() + ':' + fecha.getMinutes();
 			var fechaCompleta = dias_semana[fecha.getDay()] + " " + fecha.getDate() + ' de ' + meses[fecha.getMonth()] + ' de ' + fecha.getUTCFullYear();
 			document.write(fechaCompleta + ", " + hora);
 		}
@@ -49,11 +49,13 @@
 			<p>Bienvenidos a mi sitio web, en este sitio estar&eacute; mostrando informaci&oacute;n relacionada a mi, al
 				igual que todos mis contactos posibles.</p>
 			<strong>Que disfruten su estancia</strong>
-			<br>
+			<br> <br>
 			<p>
-				<script type="text/javascript">
-					mostrar_fecha();
-				</script>
+			<h3>Fecha:</h3>
+			<script type="text/javascript">
+				mostrar_fecha();
+			</script>
+
 			</p>
 		</section>
 		<section>
